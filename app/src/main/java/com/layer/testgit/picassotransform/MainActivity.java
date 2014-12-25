@@ -21,6 +21,11 @@ public class MainActivity extends Activity {
         Picasso.with(getApplicationContext()).load("http://91ef69bade70f992a001-b6054e05bb416c4c4b6f3b0ef3e0f71d.r93.cf3.rackcdn.com/happy-holidays1-100303463.jpg")
                 .transform(new RoundedRectTransformation(radius, stroke, margin))
                 .into(imageView);
+
+        ImageView imageView2 = (ImageView)findViewById(R.id.imageView2);
+        Picasso.with(getApplicationContext()).load("http://91ef69bade70f992a001-b6054e05bb416c4c4b6f3b0ef3e0f71d.r93.cf3.rackcdn.com/happy-holidays1-100303463.jpg")
+                .transform(new CircleTransform())
+                .into(imageView2);
     }
 
 }
